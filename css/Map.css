@@ -8,10 +8,10 @@
 /*=========banner區域=========*/
 .banner {
     position: relative;
+    width: 100%;
 }
 
 .whale {
-    width: 100%;
     height: 130vh;
     background-image: url("../img/whaleBackground.gif");
     background-repeat: no-repeat;
@@ -210,17 +210,18 @@
     .banner h1 {
         font-size: 20vw;
     }
+
+    .area h2,
+    .businessHours h4 {
+        font-size: 10vw;
+    }
+
+    iframe {
+        width: 90%;
+    }
 }
 
-@media screen and (max-width: 768px) {
-
-    .topBlock img {
-        width: 80%;
-    }
-
-    .bottomBlock img {
-        width: 80%;
-    }
+@media screen and (max-width: 992px) {
 
     .glassWindow,
     .jellyfishCarpet,
@@ -247,7 +248,24 @@
     }
 }
 
+
+@media screen and (max-width: 768px) {
+
+    .topBlock img {
+        width: 80%;
+    }
+
+    .bottomBlock img {
+        width: 80%;
+    }
+
+}
+
 @media screen and (max-width: 576px) {
+    .whale {
+        height: 120vh;
+    }
+
     .topBlock img {
         width: 100%;
     }
@@ -256,8 +274,17 @@
         width: 100%;
     }
 
-    iframe {
-        width: 500px;
-        height: 350px;
+
+    .glassWindow div img,
+    .jellyfishCarpet div img,
+    .penguinArea div img,
+    .goldfishScreen div img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .whale {
+        height: 110vh;
     }
 }

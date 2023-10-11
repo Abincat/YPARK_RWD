@@ -19,7 +19,7 @@ body {
     z-index: 1;
 }
 
-.contentGB h1 {
+.Comment {
     font-family: 'Cherry Bomb One', cursive;
     font-size: 170px;
     color: rgb(255, 255, 255);
@@ -28,6 +28,17 @@ body {
     left: 10%;
     transform: translate(-50%, -50%);
 
+}
+
+.Comment_RWD {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 170px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 /*=========海草=========*/
@@ -503,5 +514,26 @@ body {
     .messageFirstRow>div,
     .messageSecondRow>div {
         width: 50%;
+    }
+
+    .coralBG {
+        background-image: url("../img/commentBG_RWD.jpg");
+        height: 500px;
+    }
+
+    .Comment {
+        display: none;
+    }
+
+    .Comment_RWD {
+        display: block;
+        z-index: 10;
+    }
+
+    .topBlock,
+    .rightBlock,
+    .bottomBlock,
+    .leftBlock {
+        display: none;
     }
 }

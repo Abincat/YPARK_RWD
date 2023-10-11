@@ -255,13 +255,8 @@
 
     .rightBox {
         margin: 0 auto;
-        display: flex;
         width: 80%;
-        height: 350px;
-    }
-
-    .rightBox div {
-        display: block;
+        height: 400px;
     }
 
     .rightBox h3 {
@@ -296,6 +291,7 @@
 
     .rightBox {
         width: 80%;
+        height: 470px;
     }
 }
 
@@ -341,10 +337,33 @@
     .midBox {
         margin: 50px auto;
         width: 90%;
-        height: 650px;
+        height: 850px;
     }
 
     .rightBox {
         width: 90%;
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .topBox p {
+        margin: 20px 15px;
+    }
+
+    .bottomBox p {
+        margin: 20px 15px;
+    }
+
+    .bottomBox {
+        height: 480px;
+    }
+
+    .midBox {
+        height: 1000px;
+    }
+
+    .rightBox {
+        height: 600px;
     }
 }

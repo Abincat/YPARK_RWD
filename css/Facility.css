@@ -280,3 +280,40 @@
         height: 200px;
     }
 }
+
+@media screen and (max-width: 390px) {
+
+    .posterRestaurant,
+    .posterGiftShop {
+        height: 500px;
+    }
+
+    .posterRestaurant h1 {
+        font-size: 50px;
+    }
+
+    .posterGiftShop h1 {
+        font-size: 50px;
+    }
+
+    .penguinLeft_RWD {
+        left: 55%;
+        top: 530px;
+        width: 40%;
+    }
+
+    .penguinRight_RWD {
+        right: 55%;
+        top: 1230px;
+        width: 40%;
+    }
+
+    .posterGiftShopText_RWD,
+    .posterRestaurantText_RWD {
+        width: 50%;
+    }
+
+    .posterGiftShopText_RWD {
+        height: 360px;
+    }
+}

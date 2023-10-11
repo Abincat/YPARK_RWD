@@ -109,15 +109,20 @@ footer {
     .footerRight div p {
         padding: 30px;
     }
+
+    .footerRightItem a {
+        padding-left: 70px;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .footerRightItem a {
-        padding-left: 50px;
+        padding-left: 35px;
+        font-size: 12px;
     }
 
     .footerRightItem a:nth-child(1) {
-        padding-left: 60px;
+        padding-left: 35px;
     }
 
     .footerRight div p {

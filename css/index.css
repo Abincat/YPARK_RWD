@@ -521,12 +521,37 @@
     .baseMap p {
         font-size: 4vw;
     }
+
+    .floatFishLeft {
+        top: 0;
+    }
+
+    .floatFishRight {
+        top: 0;
+        left: 100px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .floatFishRight {
+        display: none;
+    }
+
+    .community p {
+        margin: 40px auto 20px 320px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .baseMap {
         background-size: 768px;
         text-align: center;
+    }
+
+    .clock {
+        left: 50%;
+        transform: translate(-50%);
     }
 
     .content {
@@ -545,12 +570,9 @@
         width: 100%;
     }
 
-    .communityPic {
-        flex-direction: row;
-    }
-
     .community p {
-        margin: 40px auto 20px 320px;
+        margin: 30px auto;
+        text-align: center;
     }
 
     .hamburger {
@@ -560,12 +582,44 @@
 }
 
 @media screen and (max-width: 576px) {
-    .communityPic div {
-        width: 130px;
-        height: 130px;
+
+    .communityPic {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
     }
 
-    .community p {
-        margin: 40px auto 20px 218px;
+    .communityPic div {
+        margin: 30px;
+        width: 200px;
+        height: 200px
+    }
+
+    .community p:nth-child(1) {
+        color: rgb(24, 70, 117);
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .floatFishRight {
+        display: none;
+    }
+
+    .floatFishLeft {
+        top: 0;
+        height: 50vh;
+    }
+
+    .communityPic {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .communityPic div {
+        margin: 30px;
+        width: 200px;
+        height: 200px
     }
 }

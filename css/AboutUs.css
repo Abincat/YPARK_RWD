@@ -454,6 +454,11 @@
 }
 
 @media screen and (max-width: 576px) {
+
+    .topImgText img {
+        width: 250px;
+    }
+
     .bottomIntroduce img {
         width: 250px;
         height: 150px;
@@ -481,4 +486,63 @@
     .gardenEel_B {
         display: none;
     }
+
+
+}
+
+@media screen and (max-width: 390px) {
+    .bottomIntroduce img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .bottomText p {
+        width: 100%;
+    }
+
+    .bottomButton {
+        width: 70%;
+    }
+
+    .gardenEel {
+        position: relative;
+        bottom: 80px;
+        right: 30px;
+    }
+
+    .gardenEel_H,
+    .gardenEel_I {
+        display: none;
+    }
+
+    .gardenEel_D,
+    .gardenEel_F,
+    .gardenEel_G {
+        width: 60px;
+    }
+
+    .gardenEel_C,
+    .gardenEel_E {
+        width: 30px;
+    }
+
+    .gardenEel_D {
+        bottom: 3px;
+    }
+
+    .gardenEel_E {
+        top: 20px;
+        z-index: 2;
+    }
+
+    .gardenEel_F {
+        bottom: 5px;
+        z-index: 1;
+    }
+
+    .gardenEel_G {
+        top: 20px;
+        right: 100px;
+    }
+
 }

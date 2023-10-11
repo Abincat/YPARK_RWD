@@ -565,7 +565,7 @@
 
 
 .depth_1000m_introduce img {
-    width: 500px;
+    width: 400px;
     padding-top: 20px;
 }
 
@@ -916,7 +916,7 @@
     }
 
     .depth_1000m_introduce img {
-        width: 430px;
+        width: 400px;
         padding-right: 20px;
     }
 
@@ -939,12 +939,13 @@
     }
 
     .stoneLeft {
-        width: 500px;
+        width: 350px;
         left: 5%;
     }
 
     .stoneRight {
         right: 5%;
+        width: 300px;
     }
 
     .ruler {
@@ -958,13 +959,13 @@
     }
 
     .submarine {
-        width: 250px;
+        width: 230px;
     }
 
     .pngwing {
         width: 150px;
-        top: 53%;
-        right: 41%;
+        top: 55%;
+        right: 44%;
     }
 
     .depth_30m_introduce img {
@@ -1003,8 +1004,8 @@
     }
 
     .depth_1000m_introduce img {
-        width: 330px;
-        padding-right: 20px;
+        width: 300px;
+        padding-right: 0px;
     }
 
     .depth_1500m_introduce img {
@@ -1025,5 +1026,91 @@
 
     .lanternFishLightfix {
         width: 200px;
+    }
+
+    .positionBottom {
+        height: 1925vh;
+        top: 2000vh;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .depth_30m_introduce img {
+        width: 200px;
+    }
+
+    .depth_40m_introduce img {
+        width: 200px;
+    }
+
+    .depth_50m_introduce img {
+        width: 200px;
+    }
+
+    .depth_70m_introduce img {
+        width: 200px;
+    }
+
+    .depth_100m_introduce img {
+        height: 250px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .depth_200m_introduce img {
+        width: 200px;
+    }
+
+    .content h3 {
+        font-size: 14px;
+        padding-left: 30px;
+    }
+
+    .depth_650m_introduce img {
+        width: 200px;
+    }
+
+    .depth_1000m_introduce img {
+        width: 200px;
+        padding-right: 20px;
+    }
+
+    .depth_1500m_introduce img {
+        width: 200px;
+    }
+
+    .depth_4000m_introduce img {
+        width: 200px;
+    }
+
+    .depth_8300m_introduce img {
+        width: 200px;
+    }
+
+    .submarine {
+        width: 200px;
+    }
+
+    .pngwing {
+        width: 100px;
+        top: 49%;
+        right: 35%;
+    }
+
+    .positionBottom {
+        height: 1920vh;
+        top: 2000vh;
+    }
+
+    .lanternFish {
+        width: 100px;
+    }
+
+    .lanternFishLightfix {
+        width: 100px;
+    }
+
+    .catDiver {
+        width: 150px;
     }
 }
