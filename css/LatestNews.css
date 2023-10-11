@@ -1,0 +1,350 @@
+/* 標題字型 font-family: 'Cherry Bomb One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Cherry+Bomb+One&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+/* 內文小標字型  font-family: 'Noto Sans TC', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+.banner div h1 {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 230px;
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+    margin-bottom: 110px;
+}
+
+.navbar {
+    background-image: url("../img/news.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-color: rgb(239, 175, 166);
+
+}
+
+.mainBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*=========左上=========*/
+.topBox {
+    border-radius: 10px;
+    background-color: white;
+    width: 250px;
+    height: 330px;
+    margin-bottom: 40px;
+    z-index: 2;
+    text-align: center;
+
+}
+
+/*=========左下=========*/
+.bottomBox {
+    border-radius: 10px;
+    background-color: white;
+    width: 250px;
+    height: 330px;
+    z-index: 2;
+    text-align: center;
+}
+
+/*=========中間=========*/
+.midBox {
+    border-radius: 10px;
+    background-color: white;
+    width: 450px;
+    height: 700px;
+    z-index: 2;
+    text-align: center;
+
+}
+
+/*=========右邊=========*/
+.rightBox {
+
+    border-radius: 10px;
+    background-color: white;
+    width: 250px;
+    height: 700px;
+    z-index: 2;
+    text-align: center;
+
+}
+
+/*=========下版面=========*/
+.bubbleImg {
+    width: 100%;
+    z-index: 1;
+    display: flex;
+}
+
+
+
+/*=========box區域細部=========*/
+
+.midBoxImg {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-image: url("../img/latestNewsPhoto3.jpg");
+    background-size: cover;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+
+.midBox h2 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 15px;
+    color: rgb(24, 70, 117);
+    border-bottom: 3px solid rgb(246, 144, 0);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.midBox p {
+    margin: 20px;
+    line-height: 1.2em;
+}
+
+/*--------------------------------*/
+
+.topBoxImg {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    background-image: url("../img/latestNewsPhoto1.jpg");
+    background-size: cover;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.topBox h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    padding-top: 10px;
+    color: rgb(24, 70, 117);
+    border-bottom: 3px solid rgb(246, 144, 0);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.topBox p {
+    margin: 10px 15px;
+    line-height: 1.2em;
+    font-size: 14px;
+}
+
+/*--------------------------------*/
+
+.bottomBoxImg {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    background-image: url("../img/latestNewsPhoto2.jpg");
+    background-size: cover;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.bottomBox h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    padding-top: 10px;
+    color: rgb(24, 70, 117);
+    border-bottom: 3px solid rgb(246, 144, 0);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.bottomBox p {
+    margin: 10px 15px;
+    line-height: 1.2em;
+    font-size: 14px;
+}
+
+/*--------------------------------*/
+
+.rightBox {
+    line-height: 1.2em;
+    font-size: 14px;
+}
+
+.rightBox h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px;
+    color: rgb(24, 70, 117);
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.2em;
+}
+
+.rightBox p {
+    margin: 10px 15px;
+    line-height: 1.2em;
+    font-size: 14px;
+}
+
+
+/*===========================RWD===========================*/
+@media screen and (max-width: 1200px) {
+    .banner div h1 {
+        font-size: 20vw;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .mainBox {
+        display: block;
+    }
+
+    .mainBoxLeft {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .topBox {
+        width: 40%;
+        height: 400px;
+    }
+
+    .topBoxImg {
+        height: 250px;
+    }
+
+    .bottomBox {
+        width: 40%;
+        height: 400px;
+    }
+
+    .bottomBoxImg {
+        height: 250px;
+    }
+
+    .topBox p {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 15px;
+    }
+
+    .bottomBox p {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 15px;
+    }
+
+    .midBox {
+        margin: 50px auto;
+        width: 80%;
+        height: 800px;
+    }
+
+    .midBoxImg {
+        height: 500px;
+    }
+
+    .rightBox {
+        margin: 0 auto;
+        display: flex;
+        width: 80%;
+        height: 350px;
+    }
+
+    .rightBox div {
+        display: block;
+    }
+
+    .rightBox h3 {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topBox {
+        width: 40%;
+        height: 400px;
+    }
+
+    .topBoxImg {
+        height: 200px;
+    }
+
+    .bottomBox {
+        width: 40%;
+        height: 400px;
+    }
+
+    .bottomBoxImg {
+        height: 200px;
+    }
+
+    .midBox {
+        margin: 50px auto;
+        width: 80%;
+        height: 800px;
+    }
+
+    .rightBox {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mainBoxLeft {
+        display: block;
+    }
+
+    .topBox {
+        width: 90%;
+        height: 450px;
+        margin: 0 auto 50px auto;
+    }
+
+    .topBoxImg {
+        height: 300px;
+    }
+
+    .bottomBox {
+        width: 90%;
+        height: 450px;
+        margin: 0 auto;
+    }
+
+    .bottomBoxImg {
+        height: 300px;
+    }
+
+    .topBox p {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 15px;
+    }
+
+    .bottomBox p {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 15px;
+    }
+
+    .midBox {
+        margin: 50px auto;
+        width: 90%;
+        height: 650px;
+    }
+
+    .rightBox {
+        width: 90%;
+    }
+}

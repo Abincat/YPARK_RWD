@@ -1,0 +1,1029 @@
+/* 標題字型 font-family: 'Cherry Bomb One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Cherry+Bomb+One&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+/* 內文小標字型  font-family: 'Noto Sans TC', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+.main {
+    background: linear-gradient(rgb(219, 237, 240), rgb(139, 230, 248), rgb(93, 154, 185), rgb(42, 86, 117), rgb(13, 45, 67), rgb(5, 32, 52), rgb(3, 23, 37), rgb(1, 10, 17), rgb(0, 0, 0));
+    /* height: 2600vh; */
+}
+
+.banner {
+    width: 100%;
+    display: block;
+    height: 600px;
+}
+
+.banner h1 {
+    font-family: 'Cherry Bomb One', cursive;
+    color: rgb(24, 70, 117);
+    font-size: 230px;
+    text-align: center;
+
+}
+
+.divingArea {
+    position: relative;
+    height: 400px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.stoneLeft {
+    position: absolute;
+    width: 600px;
+    bottom: 0;
+    left: 10%;
+    z-index: 2;
+}
+
+.stoneRight {
+    position: absolute;
+    width: 400px;
+    top: 25%;
+    right: 10%;
+    z-index: 2;
+}
+
+.SwingingSeaweedLeft {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    z-index: 3;
+}
+
+.SwingingSeaweedRight {
+    position: absolute;
+    width: 200px;
+    right: 10%;
+    z-index: 1;
+}
+
+
+
+
+/*=========定位物件=========*/
+
+.position {
+    /* border: 2px solid red; */
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    height: 1360vh;
+}
+
+.catDiver {
+    position: sticky;
+    width: 300px;
+    left: 23%;
+    top: 20%;
+    transform: rotate(30deg);
+    z-index: 3;
+}
+
+.rulerPosition {
+    width: 100%;
+    top: 150%;
+    height: 2260vh;
+    position: absolute;
+}
+
+.ruler {
+    position: sticky;
+    width: 70px;
+    left: 45%;
+    top: 0;
+}
+
+.positionBottom {
+    /* border: 3px solid rgb(242, 61, 179); */
+    width: 100%;
+    position: absolute;
+    top: 1500vh;
+    height: 1030vh;
+
+}
+
+.submarine {
+    position: sticky;
+    width: 500px;
+    left: 5%;
+    top: 10%;
+    z-index: 3;
+}
+
+.pngwing {
+    position: sticky;
+    width: 300px;
+    opacity: 0.7;
+    top: 70%;
+    z-index: 2;
+    right: 43%;
+    overflow: hidden;
+    animation: swing 4s infinite;
+    transform-origin: 0% 0%;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(-25deg);
+    }
+
+    25% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-25deg);
+    }
+}
+
+
+.flashBubble {
+    width: 50%;
+    position: sticky;
+    top: 0%;
+    opacity: 0.7;
+}
+
+
+/*=========布局=========*/
+.content {
+    flex-direction: column;
+    float: right;
+    clear: both;
+    width: 50%;
+    /* border: 3px solid rgb(255, 196, 0); */
+
+}
+
+.content li {
+    height: 1300px;
+    padding: 300px 50px;
+    width: 100%;
+}
+
+
+.content p {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    color: white;
+    text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F;
+}
+
+.content h3 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 34px;
+    color: white;
+    text-shadow: 0 0 0.2em rgb(255, 246, 119), 0 0 0.2em rgb(255, 246, 119);
+}
+
+
+.content li.depth_650m {
+    padding: 700px 50px;
+}
+
+/* .content li div {
+    border: 1px solid rgb(187, 15, 175);
+} */
+
+/*=========30m 五彩鰻=========*/
+
+.depth_30m h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(24, 70, 117);
+    padding: 30px 0;
+    text-shadow: 0px 0px 2em #59e6f5, 0px 0px 2em #59e6f5, 0px 0px 2em #59e6f5;
+
+}
+
+
+.depth_30m_introduce img {
+    width: 450px;
+    padding-top: 20px;
+}
+
+.depth_30m_text span {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth_30m_text div {
+    line-height: 1.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 10px;
+}
+
+.depth_30m_text {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.depth_30m_text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 45%;
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+
+/*=========40m 大西洋海神海蛞蝓=========*/
+
+.depth_40m h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(24, 70, 117);
+    padding: 30px 0;
+    text-shadow: 0px 0px 30px #59e6f5;
+}
+
+
+.depth_40m_introduce img {
+    width: 450px;
+    padding-top: 20px;
+}
+
+.depth_40m_text span {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth_40m_text div {
+    line-height: 1.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 10px;
+}
+
+.depth_40m_text {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.depth_40m_text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 45%;
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+
+/*=========50m 翻車魚=========*/
+
+.depth_50m h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(24, 70, 117);
+    padding: 30px 0;
+    text-shadow: 0px 0px 30px #59e6f5;
+}
+
+
+.depth_50m_introduce img {
+    width: 450px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.depth_50m_text span {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth_50m_text div {
+    line-height: 1.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 10px;
+}
+
+.depth_50m_text {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.depth_50m_text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 45%;
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+
+/*=========70m 藍環章魚=========*/
+
+.depth_70m h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(24, 70, 117);
+    padding: 30px 0;
+    text-shadow: 0px 0px 30px #59e6f5;
+}
+
+
+.depth_70m_introduce img {
+    width: 500px;
+    padding-top: 20px;
+}
+
+.depth_70m_text span {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth_70m_text div {
+    line-height: 1.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 10px;
+}
+
+.depth_70m_text {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.depth_70m_text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 45%;
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+
+/*=========100m 巨型海鞘=========*/
+
+.depth_100m h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(24, 70, 117);
+    padding: 30px 0;
+    text-shadow: 0px 0px 30px #59e6f5;
+}
+
+
+.depth_100m_introduce img {
+    height: 400px;
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+.depth_100m_text span {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth_100m_text div {
+    line-height: 1.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 10px;
+}
+
+.depth_100m_text {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.depth_100m_text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 45%;
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+
+/*=========200m 雷諾水母=========*/
+
+.depth_200m h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 30px 0;
+    text-shadow: 0px 0px 2em #59e6f5;
+
+}
+
+
+.depth_200m_introduce img {
+    width: 450px;
+    padding-top: 20px;
+}
+
+.depth_200m_text span {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth_200m_text div {
+    line-height: 1.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 10px;
+}
+
+.depth_200m_text {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.depth_200m_text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 45%;
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+
+/*=========650m 太平洋桶眼魚=========*/
+
+.depth_650m h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 30px 0;
+    text-shadow: 0px 0px 2em #59e6f5;
+}
+
+
+.depth_650m_introduce img {
+    width: 450px;
+    padding-top: 20px;
+}
+
+.depth_650m_text span {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth_650m_text div {
+    line-height: 1.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 10px;
+}
+
+.depth_650m_text {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.depth_650m_text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 45%;
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+
+/*=========1000m 玻璃章魚=========*/
+
+.depth_1000m h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 30px 0;
+    text-shadow: 0px 0px 2em #59e6f5;
+
+}
+
+
+.depth_1000m_introduce img {
+    width: 500px;
+    padding-top: 20px;
+}
+
+.depth_1000m_text span {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth_1000m_text div {
+    line-height: 1.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 10px;
+}
+
+.depth_1000m_text {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.depth_1000m_text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 45%;
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+
+/*=========1500m 深海龍魚=========*/
+
+.depth_1500m h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 30px 0;
+    text-shadow: 0px 0px 2em #59e6f5;
+
+}
+
+
+.depth_1500m_introduce img {
+    width: 500px;
+}
+
+.depth_1500m_text span {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth_1500m_text div {
+    line-height: 1.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 10px;
+}
+
+.depth_1500m_text {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.depth_1500m_text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 45%;
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+
+/*=========4000m 小飛象章魚=========*/
+
+.depth_4000m h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 30px 0;
+    text-shadow: 0px 0px 2em #59e6f5;
+
+}
+
+
+.depth_4000m_introduce img {
+    width: 500px;
+    padding-top: 20px;
+}
+
+.depth_4000m_text span {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth_4000m_text div {
+    line-height: 1.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 10px;
+}
+
+.depth_4000m_text {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.depth_4000m_text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 45%;
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+
+/*=========8300m 蝸牛魚=========*/
+
+.depth_8300m h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 30px 0;
+    text-shadow: 0px 0px 2em #59e6f5;
+
+}
+
+
+.depth_8300m_introduce img {
+    width: 500px;
+    padding-top: 20px;
+}
+
+.depth_8300m_text span {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.depth_8300m_text div {
+    line-height: 1.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 10px;
+}
+
+.depth_8300m_text {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.depth_8300m_text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 45%;
+    border: 2.5px solid rgba(255, 255, 255, 0.5);
+    border-width: 15px 15px 0 15px;
+    border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+}
+
+
+/*=========海底=========*/
+.deepSeaBeach {
+    width: 100%;
+    /* height: 300px; */
+}
+
+.lanternFish {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    z-index: 1;
+}
+
+.lanternFishLightfix {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    z-index: 2;
+    animation: flash 1s infinite alternate;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*===========================RWD===========================*/
+@media screen and (max-width: 1200px) {
+    .positionBottom {
+        height: 1900vh;
+    }
+
+    .banner h1 {
+        font-size: 20vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .catDiver {
+        width: 250px;
+    }
+
+    .submarine {
+        width: 400px;
+    }
+
+    .pngwing {
+        width: 270px;
+        top: 64%;
+        right: 38%;
+    }
+
+    .position {
+        height: 1500vh;
+    }
+
+    .positionBottom {
+        top: 1650vh;
+        height: 1110vh;
+    }
+
+    .rulerPosition {
+        height: 2550vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .content {
+        width: 60%;
+    }
+
+    .position {
+        height: 1900vh;
+    }
+
+    .positionBottom {
+        height: 1480vh;
+        top: 2000vh;
+    }
+
+    .rulerPosition {
+        height: 3200vh;
+    }
+
+    .lanternFish {
+        width: 250px;
+    }
+
+    .lanternFishLightfix {
+        width: 250px;
+    }
+
+    .ruler {
+        width: 60px;
+        left: 40%;
+    }
+
+    .catDiver {
+        left: 13%
+    }
+
+    .submarine {
+        width: 350px;
+        left: 0
+    }
+
+    .pngwing {
+        width: 250px;
+        top: 69%;
+        right: 33%;
+    }
+
+    .flashBubble {
+        width: 40%;
+    }
+
+    .depth_30m_introduce img {
+        width: 400px;
+    }
+
+    .depth_50m_introduce img {
+        width: 400px;
+        padding-left: 0px;
+    }
+
+    .depth_70m_introduce img {
+        width: 450px;
+    }
+
+    .depth_100m_introduce img {
+        height: 350px;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+
+    .depth_200m_introduce img {
+        width: 400px;
+    }
+
+    .content h3 {
+        font-size: 26px;
+        padding-left: 50px;
+    }
+
+    .depth_650m_introduce img {
+        width: 400px;
+    }
+
+    .depth_1000m_introduce img {
+        width: 430px;
+        padding-right: 20px;
+    }
+
+    .depth_1500m_introduce img {
+        width: 400px;
+    }
+
+    .depth_4000m_introduce img {
+        width: 450px;
+    }
+
+    .depth_8300m_introduce img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        width: 65%;
+    }
+
+    .stoneLeft {
+        width: 500px;
+        left: 5%;
+    }
+
+    .stoneRight {
+        right: 5%;
+    }
+
+    .ruler {
+        width: 50px;
+        left: 30%;
+    }
+
+    .catDiver {
+        left: 0%;
+        width: 200px;
+    }
+
+    .submarine {
+        width: 250px;
+    }
+
+    .pngwing {
+        width: 150px;
+        top: 53%;
+        right: 41%;
+    }
+
+    .depth_30m_introduce img {
+        width: 300px;
+    }
+
+    .depth_40m_introduce img {
+        width: 300px;
+    }
+
+    .depth_50m_introduce img {
+        width: 300px;
+    }
+
+    .depth_70m_introduce img {
+        width: 350px;
+    }
+
+    .depth_100m_introduce img {
+        height: 350px;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    .depth_200m_introduce img {
+        width: 300px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+        padding-left: 30px;
+    }
+
+    .depth_650m_introduce img {
+        width: 300px;
+    }
+
+    .depth_1000m_introduce img {
+        width: 330px;
+        padding-right: 20px;
+    }
+
+    .depth_1500m_introduce img {
+        width: 300px;
+    }
+
+    .depth_4000m_introduce img {
+        width: 300px;
+    }
+
+    .depth_8300m_introduce img {
+        width: 300px;
+    }
+
+    .lanternFish {
+        width: 200px;
+    }
+
+    .lanternFishLightfix {
+        width: 200px;
+    }
+}

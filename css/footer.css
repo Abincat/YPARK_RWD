@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+
+footer {
+    width: 100%;
+    background-color: rgb(51, 65, 123);
+    font-family: 'Noto Sans TC', sans-serif;
+    color: white;
+
+    /*另一組配色*/
+    /* background-color: rgb(247, 205, 202); */
+    /* color: rgb(251, 95, 95); */
+}
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*=========左=========*/
+.footerLeft {
+    width: 33%;
+    font-size: 0;
+    text-align: center;
+    white-space: nowrap;
+    padding-bottom: 30px;
+}
+
+.ftBottomLOGO {
+    width: 100px;
+    padding: 20px;
+}
+
+.footerLeft ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    line-height: 2em;
+    font-size: 10px;
+}
+
+/*=========右=========*/
+.footerRight {
+    width: 75%;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.footerRightItem {
+    display: flex;
+
+}
+
+.footerRightItem a {
+    padding-left: 120px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.footerRightItem a:hover {
+    /* text-shadow: #FC0 1px 0 10px; */
+    /* text-shadow: 5px 5px #558ABB; */
+    text-shadow: 5px 5px rgb(216, 184, 0);
+}
+
+.footerRight div p {
+    border-top: 2px solid white;
+    padding-top: 30px;
+    line-height: 1.6em;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/*===========================RWD===========================*/
+@media screen and (max-width: 992px) {
+    .footerContainer {
+        flex-direction: column;
+    }
+
+    .footerRightItem {
+        justify-items: center;
+    }
+
+    .footerRightItem a {
+        padding-left: 100px;
+    }
+
+    .footerRightItem a:nth-child(1) {
+        padding-left: 70px;
+    }
+
+    .footerRight div p {
+        padding: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .footerRight {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footerRight div p {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footerRightItem a {
+        padding-left: 50px;
+    }
+
+    .footerRightItem a:nth-child(1) {
+        padding-left: 60px;
+    }
+
+    .footerRight div p {
+        padding: 30px;
+    }
+}

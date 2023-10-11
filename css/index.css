@@ -1,0 +1,571 @@
+/*========================banner========================*/
+
+/* 標題字型 font-family: 'Cherry Bomb One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Cherry+Bomb+One&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+/* 內文小標字型  font-family: 'Noto Sans TC', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+
+
+/*=========背景區域=========*/
+.container {
+    width: 100%;
+    height: 1039px;
+    background-attachment: fixed;
+    display: flex;
+    position: absolute;
+    top: 62.3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+}
+
+
+.baseMap {
+    background-image: url('../img/indexGBtop.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 180vh;
+    z-index: 1;
+    background-color: rgb(229, 241, 238);
+}
+
+.baseMap h1 {
+    font-family: 'Cherry Bomb One', cursive;
+    color: white;
+    font-size: 250px;
+    text-shadow: 0 0 0.2em rgb(6, 56, 193);
+    text-align: center;
+    padding-top: 3%;
+}
+
+.baseMap p {
+    font-family: 'Cherry Bomb One', cursive;
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 2px 0.2em rgb(6, 56, 193);
+    text-align: center;
+    padding-top: 190px;
+}
+
+/*=========banner營業時間=========*/
+
+.clock {
+    background-color: rgb(229, 241, 238);
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    opacity: 0.8;
+    position: relative;
+    top: 100px;
+    left: 250px;
+    box-shadow: -2px 2px 2em rgb(24, 70, 117);
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top: 35px;
+}
+
+.time h3 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    color: rgb(246, 144, 0);
+
+}
+
+.time span {
+    margin: 5px 0;
+    color: rgb(24, 70, 117);
+}
+
+
+.time time {
+    margin: 5px 0;
+    color: rgb(24, 70, 117);
+    font-size: 26px;
+    font-weight: 600;
+}
+
+
+/*=========背景特效=========*/
+.floatFishRight {
+    display: flex;
+    position: absolute;
+    top: 21.2%;
+    left: 40%;
+    z-index: 11;
+    height: 100vh;
+    animation: flashA 3s infinite alternate;
+}
+
+
+.floatFishLeft {
+    display: flex;
+    position: absolute;
+    top: 21.2%;
+    left: 10%;
+    z-index: 11;
+    height: 100vh;
+    animation: flashB 4s infinite alternate;
+}
+
+@keyframes flashA {
+    0% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes flashB {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*=========泡泡特效=========*/
+.bubble img {
+    width: 50px;
+    animation-name: bubble;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+
+.bubble {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -100px;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubble img:nth-child(1) {
+    animation-delay: 6.5s;
+    width: 20px;
+}
+
+.bubble img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.bubble img:nth-child(3) {
+    animation-delay: 5s;
+    width: 15px;
+}
+
+.bubble img:nth-child(4) {
+    animation-delay: 9s;
+    width: 17px;
+}
+
+.bubble img:nth-child(5) {
+    animation-delay: 2.5s;
+}
+
+.bubble img:nth-child(6) {
+    animation-delay: 4.5s;
+    width: 15px;
+}
+
+.bubble img:nth-child(7) {
+    animation-delay: 12s;
+}
+
+.bubble img:nth-child(8) {
+    animation-delay: 3.5s;
+    width: 15px;
+}
+
+.bubble img:nth-child(9) {
+    animation-delay: 10s;
+}
+
+.bubble img:nth-child(10) {
+    animation-delay: 2.5s;
+    width: 20px;
+}
+
+.bubble img:nth-child(11) {
+    animation-delay: 6s;
+}
+
+
+
+
+/*========================content========================*/
+.main {
+    background: linear-gradient(to bottom, rgb(229, 241, 238), transparent);
+    display: flex;
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.contentLeft {
+    flex: 70%;
+}
+
+.contentRight {
+    flex: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+/*=========票種=========*/
+
+.contentLeft h5 {
+    font-size: 28px;
+    color: rgb(24, 70, 117);
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding: 20px 10px 10px 10px;
+}
+
+.ticketType {
+    flex-direction: column;
+    display: flex;
+    line-height: 1.2em;
+    width: 100%;
+}
+
+.adult {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.adult div p:nth-child(1) {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 5px 0;
+    color: rgb(24, 70, 117);
+}
+
+.adult div p:nth-child(2) {
+    margin-bottom: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+}
+
+.student {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.student div p:nth-child(1) {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 5px 0;
+    color: rgb(24, 70, 117);
+}
+
+.student div p:nth-child(2) {
+    margin-bottom: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+}
+
+.child {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.child div p:nth-child(1) {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 5px 0;
+    color: rgb(24, 70, 117);
+}
+
+.child div p:nth-child(2) {
+    margin-bottom: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+}
+
+.preferential {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.preferential div p:nth-child(1) {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 5px 0;
+    color: rgb(24, 70, 117);
+}
+
+.preferential div p:nth-child(2) {
+    margin-bottom: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+}
+
+.price {
+    margin-top: 30px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: rgb(24, 70, 117);
+}
+
+/*=========購買按鈕=========*/
+.buyTickets {
+    background-image: url("../img/clickBuy.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: rgb(24, 70, 117);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/*=========購買流程=========*/
+.process {
+    margin-top: 100px;
+    background: linear-gradient(to top, rgb(229, 241, 238), transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexslider {
+    width: 60%;
+    border: 2px solid tomato;
+    overflow: hidden;
+
+}
+
+
+.slidesText {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: rgb(24, 70, 117);
+    background-color: rgb(229, 241, 238);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+/*=========社群照片=========*/
+.lowerArea {
+    display: flex;
+    background-color: rgb(229, 241, 238);
+    background-image: url("../img/indexGBbottom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 1000px; */
+    /*漸層淡化效果↘↘*/
+    /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../img/網頁下版(改).png"); */
+}
+
+
+.community {
+    display: inline;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 300px 60px 80px auto;
+}
+
+.community p {
+    margin: 40px 0 20px 800px;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+.communityPic {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.communityPic div {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    justify-content: flex-end;
+    margin-left: 40px;
+}
+
+.communityPic div.fbPic1 {
+    background-image: url("../img/fbPic1.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 8px solid white;
+    box-shadow: gold 0px 20px 30px -10px;
+}
+
+.communityPic div.fbPic2 {
+    background-image: url("../img/fbPic2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 8px solid white;
+    box-shadow: gold 0px 20px 30px -10px;
+}
+
+.communityPic div.fbPic3 {
+    background-image: url("../img/fbPic3.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 8px solid white;
+    box-shadow: gold 0px 20px 30px -10px;
+}
+
+.communityPic div.igPic1 {
+    background-image: url("../img/igPic1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 8px solid white;
+    box-shadow: gold 0px 20px 30px -10px;
+}
+
+.communityPic div.igPic2 {
+    background-image: url("../img/igPic2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 8px solid white;
+    box-shadow: gold 0px 20px 30px -10px;
+}
+
+.communityPic div.igPic3 {
+    background-image: url("../img/igPic3.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 8px solid white;
+    box-shadow: gold 0px 20px 30px -10px;
+}
+
+
+
+/*===========================RWD===========================*/
+@media screen and (max-width: 1200px) {
+    .baseMap h1 {
+        font-size: 20vw;
+    }
+
+    .baseMap p {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .baseMap {
+        background-size: 768px;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .contentLeft {
+        flex: 100%;
+    }
+
+    .contentRight {
+        flex: 100%;
+    }
+
+    .flexslider {
+        width: 100%;
+    }
+
+    .communityPic {
+        flex-direction: row;
+    }
+
+    .community p {
+        margin: 40px auto 20px 320px;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 40px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .communityPic div {
+        width: 130px;
+        height: 130px;
+    }
+
+    .community p {
+        margin: 40px auto 20px 218px;
+    }
+}

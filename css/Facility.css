@@ -1,0 +1,282 @@
+/* 標題字型 font-family: 'Cherry Bomb One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Cherry+Bomb+One&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+/* 內文小標字型  font-family: 'Noto Sans TC', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+
+.containerPic {
+    display: flex;
+}
+
+.posterRestaurant,
+.posterGiftShop {
+    width: 50%;
+    height: 1000px;
+}
+
+.posterRestaurantOcclusion {
+    position: absolute;
+    width: 50%;
+    height: 1000px;
+    background-color: white;
+    opacity: 0.4;
+}
+
+.posterGiftShopOcclusion {
+    position: absolute;
+    width: 50%;
+    height: 1000px;
+    background-color: white;
+    opacity: 0.4;
+}
+
+.posterRestaurant img {
+    width: 100%;
+    height: 100%;
+}
+
+.posterGiftShop img {
+    width: 100%;
+    height: 100%;
+}
+
+.posterRestaurant h1 {
+    font-size: 64px;
+    font-family: 'Cherry Bomb One', cursive;
+    text-align: right;
+    bottom: 200px;
+    left: 50px;
+    position: absolute;
+    color: white;
+}
+
+.posterGiftShop h1 {
+    font-size: 64px;
+    font-family: 'Cherry Bomb One', cursive;
+    bottom: 200px;
+    right: 330px;
+    position: absolute;
+    color: white;
+}
+
+.posterGiftShopText {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    position: relative;
+    bottom: 170px;
+    background-color: rgba(12, 21, 78, 0.5);
+    line-height: 1.5em;
+    padding-right: 10px;
+}
+
+.posterRestauranText {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 218px;
+    background-color: rgba(12, 21, 78, 0.5);
+    line-height: 1.5em;
+    padding-left: 10px;
+}
+
+.posterRestaurantText_RWD {
+    display: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: rgb(12, 21, 78);
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    line-height: 1.5em;
+    margin-left: 10px;
+}
+
+.posterGiftShopText_RWD {
+    display: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: rgb(12, 21, 78);
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    line-height: 1.5em;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/*=========企鵝=========*/
+.penguin {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    /* height: 50vh; */
+    font-size: 0;
+}
+
+.penguinUpright {
+    position: absolute;
+    bottom: 50px;
+    width: 500px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 3;
+}
+
+.penguinLeft {
+    position: absolute;
+    bottom: 50px;
+    width: 500px;
+    left: 40%;
+    transform: translate(-50%);
+    z-index: 2;
+    opacity: 0;
+}
+
+.penguinRight {
+    position: absolute;
+    bottom: 50px;
+    width: 500px;
+    left: 60%;
+    transform: translate(-50%);
+    z-index: 1;
+    opacity: 0;
+}
+
+.penguinLeft_RWD {
+    position: absolute;
+    width: 200px;
+    left: 70%;
+    top: 215%;
+    display: none;
+}
+
+.penguinRight_RWD {
+    position: absolute;
+    width: 200px;
+    right: 70%;
+    top: 470%;
+    display: none;
+}
+
+
+
+/*===========================RWD===========================*/
+@media screen and (max-width: 1200px) {
+    .posterRestaurant h1 {
+        font-size: 5vw;
+    }
+
+    .posterGiftShop h1 {
+        font-size: 5vw;
+        right: 320px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .posterRestaurant h1 {
+        left: 40px;
+    }
+
+    .posterGiftShop h1 {
+        right: 260px;
+    }
+
+    .posterRestaurant,
+    .posterGiftShop {
+        height: 700px;
+    }
+
+    .penguinUpright,
+    .penguinLeft,
+    .penguinRight {
+        width: 300px;
+    }
+
+    .posterGiftShopText,
+    .posterRestauranText {
+        font-size: 14px;
+    }
+
+    .posterRestauranText {
+        bottom: 212px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containerPic {
+        display: block;
+    }
+
+    .posterRestaurant,
+    .posterGiftShop {
+        width: 100%;
+        height: 1000px;
+    }
+
+    .posterRestaurantOcclusion,
+    .posterGiftShopOcclusion {
+        display: none;
+    }
+
+    .posterRestaurant h1 {
+        font-size: 120px;
+        position: relative;
+        bottom: 90%;
+        margin-right: 60px;
+    }
+
+    .posterGiftShop h1 {
+        font-size: 120px;
+        position: relative;
+        bottom: 90%;
+        margin-left: 300px;
+        white-space: nowrap;
+    }
+
+    .posterRestauranText,
+    .posterGiftShopText {
+        display: none;
+    }
+
+    .posterGiftShopText_RWD,
+    .posterRestaurantText_RWD {
+        width: 70%;
+        display: block;
+    }
+
+    .penguinLeft_RWD,
+    .penguinRight_RWD {
+        display: block;
+    }
+
+    .penguin {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .posterRestaurant h1 {
+        font-size: 100px;
+    }
+
+    .posterGiftShop h1 {
+        font-size: 100px;
+    }
+
+    .penguinLeft_RWD {
+        left: 60%;
+    }
+
+    .penguinRight_RWD {
+        right: 60%;
+    }
+
+    .posterGiftShopText_RWD {
+        width: 67%;
+        height: 200px;
+    }
+}

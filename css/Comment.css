@@ -1,0 +1,507 @@
+/* 標題字型 font-family: 'Cherry Bomb One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Cherry+Bomb+One&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+/* 內文小標字型  font-family: 'Noto Sans TC', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+
+.coralBG {
+    background-image: url("../img/EcologyBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(10, 35, 59);
+    z-index: 1;
+}
+
+.contentGB h1 {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 170px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+
+}
+
+/*=========海草=========*/
+.seaweedTop {
+    background-image: url("../img/seaweedTop.png");
+    background-size: 100%;
+    height: 350px;
+    width: 350px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 40%;
+    z-index: 3;
+    opacity: 0.8;
+}
+
+.seaweedRight {
+    background-image: url("../img/seaweedRight.png");
+    background-size: 100%;
+    height: 100vh;
+    width: 300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 75%;
+    top: 12%;
+    z-index: 3;
+    opacity: 0.8;
+}
+
+.seaweedBottom {
+    background-image: url("../img/seaweedBottom.png");
+    background-size: 100%;
+    height: 195px;
+    width: 280px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    z-index: 3;
+    opacity: 0.8;
+}
+
+.seaweedLeft {
+    background-image: url("../img/seaweedLeft.png");
+    background-size: 100%;
+    height: 100vh;
+    width: 300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.8;
+}
+
+/*=========雪花=========*/
+.snowTop {
+    background-image: url("../img/snowTop.png");
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.snowRight {
+    background-image: url("../img/snowRight.png");
+    height: 100vh;
+    width: 200px;
+    position: absolute;
+    left: 70%;
+    z-index: 2;
+}
+
+.snowBottom {
+    background-image: url("../img/snowBottom.png");
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 96%;
+}
+
+.snowLeft {
+    background-image: url("../img/snowLeft.png");
+    height: 100vh;
+    width: 200px;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/*=========魷魚=========*/
+
+/*--------Top區域--------*/
+.squidA {
+    background-image: url("../img/squid1.png");
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    z-index: 4;
+    opacity: 0.8;
+}
+
+.squidB {
+    background-image: url("../img/squid3.png");
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    z-index: 4;
+    opacity: 0.8;
+}
+
+/*--------Right區域--------*/
+.squidC {
+    background-image: url("../img/squid4.png");
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 75%;
+    z-index: 4;
+    opacity: 0.8;
+}
+
+.squidD {
+    background-image: url("../img/squid2.png");
+    background-size: 100%;
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70%;
+    left: 77%;
+    z-index: 4;
+    opacity: 0.8;
+}
+
+/*--------Bottom區域--------*/
+.squidE {
+    background-image: url("../img/squid5.png");
+    background-size: 100%;
+    height: 150px;
+    width: 180px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 86%;
+    left: 60%;
+    z-index: 4;
+    opacity: 0.8;
+}
+
+.squidF {
+    background-image: url("../img/squid6.png");
+    background-size: 100%;
+    height: 150px;
+    width: 180px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 85%;
+    left: 26%;
+    z-index: 4;
+    opacity: 0.8;
+}
+
+.squidG {
+    background-image: url("../img/squid9.png");
+    background-size: 100%;
+    height: 150px;
+    width: 300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    z-index: 4;
+    opacity: 0.8;
+}
+
+/*--------Left區域--------*/
+
+.squidH {
+    background-image: url("../img/squid7.png");
+    background-size: 100%;
+    height: 150px;
+    width: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    z-index: 4;
+    opacity: 0.8;
+}
+
+.squidI {
+    background-image: url("../img/squid8.png");
+    background-size: 100%;
+    height: 150px;
+    width: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    transform: rotate(45deg);
+    z-index: 4;
+    opacity: 0.8;
+}
+
+
+/*=========評論區=========*/
+
+.messageFirstRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.messageFirstRow p {
+    color: rgb(24, 70, 117);
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+.messageSecondRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.messageSecondRow p {
+    color: rgb(24, 70, 117);
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+.Pop-ups {
+    border: 2.5px solid rgb(246, 144, 0);
+    border-radius: 40px;
+    padding: 10px;
+    position: relative;
+}
+
+.Pop-ups::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 40%;
+    border: 2.5px solid rgb(246, 144, 0);
+    border-width: 20px 20px 0 20px;
+    border-color: rgb(246, 144, 0) transparent transparent transparent;
+
+}
+
+.messageA {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 30px 30px 0px;
+    width: 270px;
+}
+
+.messageA img {
+    width: 150px;
+    margin: 10px;
+}
+
+.messageB {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 30px 30px 0px;
+    width: 270px;
+}
+
+.messageB img {
+    width: 150px;
+    margin: 10px;
+}
+
+.messageC {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 30px 30px 0px;
+    width: 270px;
+}
+
+.messageC img {
+    width: 150px;
+    margin: 10px;
+}
+
+.messageD {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 30px 30px 0px;
+    width: 270px;
+}
+
+.messageD img {
+    width: 150px;
+    margin: 10px;
+}
+
+.messageE {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    width: 270px;
+}
+
+.messageE img {
+    width: 150px;
+    margin: 10px;
+}
+
+.messageF {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    width: 270px;
+}
+
+.messageF img {
+    width: 150px;
+    margin: 10px;
+}
+
+.messageG {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    width: 270px;
+}
+
+.messageG img {
+    width: 150px;
+    margin: 10px;
+}
+
+.messageH {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    width: 270px;
+}
+
+.messageH img {
+    width: 150px;
+    margin: 10px;
+}
+
+
+/*===========================RWD===========================*/
+@media screen and (max-width: 1200px) {
+    .coralBG {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contentGB h1 {
+        font-size: 18vw;
+    }
+
+    .seaweedTop {
+        height: 250px;
+        width: 250px;
+    }
+
+    .seaweedRight {
+        width: 250px;
+    }
+
+    .seaweedBottom {
+        height: 195px;
+        width: 200px;
+    }
+
+    .seaweedLeft {
+        width: 200px;
+    }
+
+    .squidA {
+        width: 150px;
+    }
+
+    .squidB {
+        width: 150px;
+    }
+
+    .squidC {
+        width: 150px;
+    }
+
+    .squidD {
+        width: 100px;
+    }
+
+    .squidE {
+        width: 130px;
+    }
+
+    .squidF {
+        width: 130px;
+    }
+
+    .squidG {
+        width: 200px;
+    }
+
+    .squidH {
+        width: 150px;
+    }
+
+    .squidI {
+        width: 150px;
+    }
+
+    .messageFirstRow,
+    .messageSecondRow {
+        flex-wrap: wrap;
+    }
+
+    .messageFirstRow>div,
+    .messageSecondRow>div {
+        width: 50%;
+    }
+}

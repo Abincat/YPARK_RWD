@@ -1,0 +1,484 @@
+/* 標題字型 font-family: 'Cherry Bomb One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Cherry+Bomb+One&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+/* 內文小標字型  font-family: 'Noto Sans TC', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Handjet&family=Noto+Sans+TC&family=Ruwudu&display=swap');
+
+
+.content {
+    background-image: url("../img/aboutUsBGlong.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/*=========上面區域=========*/
+
+.cave h1 {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 200px;
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+    margin-bottom: 110px;
+}
+
+.topIntroduce {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: white;
+    background-color: rgba(16, 47, 78, 0.5);
+    border-radius: 20px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    line-height: 1.2em;
+    text-align: center;
+    border: 5px double white;
+}
+
+.topIntroduceBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.topImgText {
+    display: flex;
+    margin: 50px 0;
+    width: 65%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.topImgText div {
+    display: block;
+    text-align: start;
+    width: 60%;
+    margin-right: 20px;
+    color: white;
+    line-height: 1.5em;
+}
+
+.topImgText img {
+    width: 240px;
+    border-radius: 10px;
+}
+
+.topImgText div h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 32px;
+    color: rgb(246, 144, 0);
+    font-weight: 500;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid white;
+}
+
+/*=========下面區域=========*/
+
+.bottomIntroduce {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.bottomIntroduce h1 {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 100px;
+    color: rgb(246, 144, 0);
+    text-shadow: 7px 5px rgb(16, 47, 78);
+    text-align: left;
+    transform-origin: bottom center;
+    animation: titleSwim 3s ease infinite alternate;
+}
+
+.bottomIntroduce img {
+    width: 400px;
+    height: 300px;
+
+}
+
+.bottomText {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.bottomText p {
+    color: rgb(255, 255, 255);
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    line-height: 1.5em;
+
+}
+
+.bottomText h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: rgb(246, 144, 0);
+    font-size: 32px;
+    font-weight: 500;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid white;
+}
+
+@keyframes titleSwim {
+    from {
+        transform: rotate(-3deg);
+    }
+
+    to {
+        transform: rotate(3deg);
+    }
+}
+
+/*=========下面區域(圖片小按鈕)=========*/
+
+.bottomBlock {
+    display: block;
+    padding: 30px 0;
+}
+
+.bottomImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.bottomImg p {
+    width: 300px;
+    color: white;
+    line-height: 1.2em;
+    padding: 0 10px;
+}
+
+.bottomImg img {
+    width: 300px;
+    padding: 0 10px;
+}
+
+.bottomButton {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.bottomButtonA {
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(87, 220, 190, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    height: 70px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.bottomButtonA span {
+    color: white;
+    text-shadow: 1px 0px 0 rgb(0, 0, 0);
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.3em;
+    margin: 8px;
+    font-weight: 500;
+}
+
+.bottomButtonB {
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(87, 220, 190, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    height: 70px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.bottomButtonB span {
+    color: white;
+    text-shadow: 1px 0px 0 rgb(0, 0, 0);
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.3em;
+    margin: 8px;
+    font-weight: 500;
+}
+
+.bottomButtonC {
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(87, 220, 190, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    height: 70px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.bottomButtonC span {
+    color: white;
+    text-shadow: 1px 0px 0 rgb(0, 0, 0);
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.3em;
+    margin: 8px;
+    font-weight: 500;
+}
+
+/*=========花園鰻=========*/
+.beach {
+    background-image: url("../img/aboutUsBottom.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    display: flex;
+    position: relative;
+    background-position: center bottom;
+    background-color: rgb(1, 72, 102);
+}
+
+.gardenEel {
+    margin: 270px auto;
+}
+
+/*-------長鰻魚--------*/
+.gardenEel_A,
+.gardenEel_D,
+.gardenEel_F,
+.gardenEel_G,
+.gardenEel_H {
+    width: 100px;
+}
+
+/*-------短鰻魚--------*/
+.gardenEel_B,
+.gardenEel_C,
+.gardenEel_E,
+.gardenEel_I {
+    width: 60px;
+}
+
+/*-------調整定位/搖擺動畫--------*/
+.gardenEel_A {
+    position: relative;
+    right: 30px;
+    top: 10px;
+    transform-origin: bottom center;
+    animation: swim 2s ease infinite alternate;
+
+}
+
+.gardenEel_B {
+    position: relative;
+    top: 70px;
+    transform-origin: bottom center;
+    animation: swim 4s ease infinite alternate;
+}
+
+.gardenEel_C {
+    position: relative;
+    left: 50px;
+    transform-origin: bottom center;
+    animation: swim 1.5s ease infinite alternate;
+
+}
+
+.gardenEel_D {
+    position: relative;
+    bottom: 10px;
+    transform-origin: bottom center;
+    animation: swim 2.5s ease infinite alternate;
+}
+
+.gardenEel_E {
+    position: relative;
+    left: 30px;
+    top: 40px;
+    transform-origin: bottom center;
+    animation: swim 2s ease infinite alternate;
+}
+
+.gardenEel_F {
+    position: relative;
+    bottom: 35px;
+    transform-origin: bottom center;
+    animation: swim 4s ease infinite alternate;
+
+}
+
+.gardenEel_G {
+    position: relative;
+    top: 50px;
+    left: 30px;
+    transform-origin: bottom center;
+    animation: swim 2.5s ease infinite alternate;
+}
+
+.gardenEel_H {
+    position: relative;
+    bottom: 20px;
+    transform-origin: bottom center;
+    animation: swim 3s ease infinite alternate;
+}
+
+.gardenEel_I {
+    position: relative;
+    transform-origin: bottom center;
+    animation: swim 2s ease infinite alternate;
+}
+
+@keyframes swim {
+    from {
+        transform: rotate(-10deg);
+    }
+
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+
+
+/*===========================RWD===========================*/
+@media screen and (max-width: 1200px) {
+    .cave h1 {
+        font-size: 18vw;
+    }
+
+    .bottomIntroduce h1 {
+        font-size: 9vw;
+    }
+
+    .content {
+        background-size: cover;
+    }
+
+    .beach {
+        height: 120vh;
+    }
+
+    .gardenEel_B {
+        top: 40px;
+    }
+
+    .gardenEel_G {
+        top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .content {
+        background-image: url("../img/aboutUsBGlong_RWD.jpg");
+    }
+
+    .topImgText {
+        display: block;
+        margin: 50px 0;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topImgText div {
+        width: 100%;
+    }
+
+    .topImgText img {
+        width: 350px;
+        margin-top: 40px;
+    }
+
+    .bottomIntroduce img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .bottomButton {
+        display: block;
+        width: 30%;
+    }
+
+    .bottomImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bottomImg img {
+        width: 90%;
+        margin: 30px auto;
+        border-radius: 50px;
+    }
+
+    .bottomImg p {
+        width: 70%;
+    }
+
+    .beach {
+        height: 80vh;
+    }
+
+    .gardenEel {
+        position: relative;
+        bottom: 130px;
+    }
+
+    .gardenEel_A,
+    .gardenEel_D,
+    .gardenEel_F,
+    .gardenEel_G,
+    .gardenEel_H {
+        width: 80px;
+    }
+
+    .gardenEel_B,
+    .gardenEel_C,
+    .gardenEel_E,
+    .gardenEel_I {
+        width: 50px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .bottomIntroduce img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .bottomButton {
+        width: 45%;
+    }
+
+    .gardenEel {
+        position: relative;
+        bottom: 140px;
+    }
+
+    .gardenEel_C {
+        left: 30px;
+    }
+
+    .gardenEel_F,
+    .gardenEel_H {
+        bottom: 15px;
+    }
+
+    .gardenEel_A,
+    .gardenEel_B {
+        display: none;
+    }
+}
