@@ -809,7 +809,7 @@
     }
 
     .pngwing {
-        top: 47%;
+        top: 430px;
         right: 40%;
     }
 
@@ -830,7 +830,7 @@
 
     .pngwing {
         width: 270px;
-        top: 40%;
+        top: 350px;
         right: 38%;
     }
 
@@ -891,8 +891,8 @@
 
     .pngwing {
         width: 250px;
-        top: 36%;
-        right: 33%;
+        top: 310px;
+        right: 34%;
     }
 
     .flashBubble {
@@ -980,7 +980,7 @@
 
     .pngwing {
         width: 150px;
-        top: 27%;
+        top: 210px;
         right: 44%;
     }
 
@@ -1109,7 +1109,7 @@
 
     .pngwing {
         width: 100px;
-        top: 49%;
+        top: 185px;
         right: 35%;
     }
 
@@ -1130,9 +1130,4 @@
         width: 150px;
     }
 
-    .pngwing {
-        width: 150px;
-        top: 25%;
-        right: 20%;
-    }
 }
