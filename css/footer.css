@@ -111,18 +111,22 @@ footer {
     }
 
     .footerRightItem a {
+        padding-left: 100px;
+    }
+
+    .footerRightItem a:nth-child(1) {
         padding-left: 70px;
     }
 }
 
 @media screen and (max-width: 576px) {
     .footerRightItem a {
-        padding-left: 30px;
+        padding-left: 60px;
         font-size: 12px;
     }
 
     .footerRightItem a:nth-child(1) {
-        padding-left: 30px;
+        padding-left: 40px;
     }
 
     .footerRight div p {
@@ -132,17 +136,17 @@ footer {
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 390px) {
     .footerRightItem {
         display: block;
     }
 
     .footerRightItem a {
-        padding-left: 20px;
+        padding-left: 30px;
         font-size: 12px;
     }
 
     .footerRightItem a:nth-child(1) {
-        padding-left: 20px;
+        padding-left: 30px;
     }
 }
