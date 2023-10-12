@@ -250,6 +250,9 @@
 
 
 @media screen and (max-width: 768px) {
+    .whale {
+        height: 100vh;
+    }
 
     .topBlock img {
         width: 80%;
@@ -263,7 +266,7 @@
 
 @media screen and (max-width: 576px) {
     .whale {
-        height: 120vh;
+        height: 80vh;
     }
 
     .topBlock img {
@@ -285,6 +288,6 @@
 
 @media screen and (max-width: 390px) {
     .whale {
-        height: 110vh;
+        height: 40vh;
     }
 }

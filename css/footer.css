@@ -117,15 +117,32 @@ footer {
 
 @media screen and (max-width: 576px) {
     .footerRightItem a {
-        padding-left: 35px;
+        padding-left: 30px;
         font-size: 12px;
     }
 
     .footerRightItem a:nth-child(1) {
-        padding-left: 35px;
+        padding-left: 30px;
     }
 
     .footerRight div p {
         padding: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .footerRightItem {
+        display: block;
+    }
+
+    .footerRightItem a {
+        padding-left: 20px;
+        font-size: 12px;
+    }
+
+    .footerRightItem a:nth-child(1) {
+        padding-left: 20px;
     }
 }

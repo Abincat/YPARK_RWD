@@ -375,6 +375,11 @@
     .gardenEel_G {
         top: 30px;
     }
+
+    .gardenEel {
+        position: relative;
+        bottom: -450px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -428,12 +433,12 @@
     }
 
     .beach {
-        height: 80vh;
+        height: 50vh;
     }
 
     .gardenEel {
         position: relative;
-        bottom: 130px;
+        bottom: 70px;
     }
 
     .gardenEel_A,
@@ -470,15 +475,14 @@
 
     .gardenEel {
         position: relative;
-        bottom: 140px;
+        bottom: 60px;
     }
 
     .gardenEel_C {
         left: 30px;
     }
 
-    .gardenEel_F,
-    .gardenEel_H {
+    .gardenEel_F {
         bottom: 15px;
     }
 
@@ -487,7 +491,10 @@
         display: none;
     }
 
-
+    .gardenEel_I,
+    .gardenEel_H {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -510,8 +517,7 @@
         right: 30px;
     }
 
-    .gardenEel_H,
-    .gardenEel_I {
+    .gardenEel_H {
         display: none;
     }
 
@@ -545,4 +551,8 @@
         right: 100px;
     }
 
+    .gardenEel {
+        position: relative;
+        bottom: 10px;
+    }
 }

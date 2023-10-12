@@ -71,7 +71,7 @@
     width: 100%;
     position: absolute;
     top: 70%;
-    height: 1360vh;
+    height: 8200px;
 }
 
 .catDiver {
@@ -101,8 +101,8 @@
     /* border: 3px solid rgb(242, 61, 179); */
     width: 100%;
     position: absolute;
-    top: 1500vh;
-    height: 1030vh;
+    top: 9000px;
+    height: 6300px;
 
 }
 
@@ -795,11 +795,27 @@
 /*===========================RWD===========================*/
 @media screen and (max-width: 1200px) {
     .positionBottom {
-        height: 1900vh;
+        height: 6000px;
+        top: 9300px;
+    }
+
+    .position {
+        height: 8200px;
+        top: 45%
     }
 
     .banner h1 {
         font-size: 20vw;
+    }
+
+    .pngwing {
+        top: 47%;
+        right: 40%;
+    }
+
+    .rulerPosition {
+        top: 70%;
+        height: 14000px;
     }
 }
 
@@ -814,21 +830,21 @@
 
     .pngwing {
         width: 270px;
-        top: 64%;
+        top: 40%;
         right: 38%;
     }
 
     .position {
-        height: 1500vh;
+        height: 8200px;
     }
 
     .positionBottom {
-        top: 1650vh;
-        height: 1110vh;
+        height: 6000px;
+        top: 9300px;
     }
 
     .rulerPosition {
-        height: 2550vh;
+        height: 14000px;
     }
 }
 
@@ -839,16 +855,16 @@
     }
 
     .position {
-        height: 1900vh;
+        height: 8200px;
     }
 
     .positionBottom {
-        height: 1480vh;
-        top: 2000vh;
+        height: 5900px;
+        top: 9300px;
     }
 
     .rulerPosition {
-        height: 3200vh;
+        height: 14000px;
     }
 
     .lanternFish {
@@ -870,12 +886,12 @@
 
     .submarine {
         width: 350px;
-        left: 0
+        left: 0;
     }
 
     .pngwing {
         width: 250px;
-        top: 69%;
+        top: 36%;
         right: 33%;
     }
 
@@ -964,7 +980,7 @@
 
     .pngwing {
         width: 150px;
-        top: 55%;
+        top: 27%;
         right: 44%;
     }
 
@@ -1029,8 +1045,8 @@
     }
 
     .positionBottom {
-        height: 1925vh;
-        top: 2000vh;
+        height: 5900px;
+        top: 9300px;
     }
 }
 
@@ -1098,8 +1114,8 @@
     }
 
     .positionBottom {
-        height: 1920vh;
-        top: 2000vh;
+        height: 5900px;
+        top: 9300px;
     }
 
     .lanternFish {
@@ -1112,5 +1128,11 @@
 
     .catDiver {
         width: 150px;
+    }
+
+    .pngwing {
+        width: 150px;
+        top: 25%;
+        right: 20%;
     }
 }
