@@ -167,21 +167,25 @@
 @media screen and (max-width: 1200px) {
     .posterRestaurant h1 {
         font-size: 5vw;
+        bottom: 500px;
     }
 
     .posterGiftShop h1 {
         font-size: 5vw;
-        right: 320px;
+        bottom: 500px;
+        right: 300px;
     }
 }
 
 @media screen and (max-width: 992px) {
     .posterRestaurant h1 {
-        left: 40px;
+        left: 20px;
+        bottom: 600px;
     }
 
     .posterGiftShop h1 {
-        right: 260px;
+        right: 220px;
+        bottom: 600px;
     }
 
     .posterRestaurant,
@@ -255,6 +259,15 @@
     .penguin {
         display: none;
     }
+
+    .penguinLeft_RWD {
+        left: 70%;
+        top: 160%;
+    }
+
+    .penguinRight_RWD {
+        top: 360%;
+    }
 }
 
 
@@ -269,10 +282,12 @@
 
     .penguinLeft_RWD {
         left: 60%;
+        top: 220%;
     }
 
     .penguinRight_RWD {
         right: 60%;
+        top: 480%;
     }
 
     .posterGiftShopText_RWD {
