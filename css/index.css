@@ -98,7 +98,7 @@
 .floatFishRight {
     display: flex;
     position: absolute;
-    top: 21.2%;
+    top: 10%;
     left: 40%;
     z-index: 11;
     height: 100vh;
@@ -109,7 +109,7 @@
 .floatFishLeft {
     display: flex;
     position: absolute;
-    top: 21.2%;
+    top: 10%;
     left: 10%;
     z-index: 11;
     height: 100vh;
